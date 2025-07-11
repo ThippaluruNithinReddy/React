@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -13,7 +11,10 @@ function App() {
     if(counter>=20){
       return
     };
-    setCounter(counter+1)
+    setCounter(prev => prev+1)
+    setCounter(prev => prev+1)
+    setCounter(prev => prev+1)
+    setCounter(prev => prev+1)
     console.log("clicked",counter);
   }
 
